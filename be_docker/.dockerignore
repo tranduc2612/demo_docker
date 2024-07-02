@@ -1,0 +1,16 @@
+# Bỏ qua thư mục Git
+.git
+
+# Bỏ qua tệp Dockerfile
+Dockerfile
+
+# Bỏ qua tệp Docker Compose
+docker-compose.yml
+
+# Bỏ qua các thư mục node_modules
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Bỏ qua các tệp build tạm thời
+dist
