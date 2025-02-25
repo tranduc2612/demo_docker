@@ -14,10 +14,10 @@ export class UsersService {
     return this.usersRepository.find();
   }
 
-  create(): Promise<User[]> {
+  create(req): Promise<User[]> {
     const user = this.usersRepository.create({
-      name: 'John Doe',
-      password: '123'
+      name: req.username,
+      password: req.password
     });
 
     this.usersRepository.save(user);
